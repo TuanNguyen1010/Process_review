@@ -12,4 +12,8 @@ describe '#music_filter' do
   it 'returns the lower threshold when input is below the lower threshold' do
     expect(music_filter([20])).to eq([40])
   end 
+
+  it 'returns the upper threshold when input is above upper threshold' do 
+    expect(music_filter([1001])).to eq([1000])
+  end 
 end
