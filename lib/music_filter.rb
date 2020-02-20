@@ -1,3 +1,3 @@
 def music_filter(soundwave)
-  return []
+  return soundwave
 end 
